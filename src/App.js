@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Import BrowserRouter as Router
 
@@ -8,6 +8,8 @@ import Work from './ui-component/Work';
 import Home from './ui-component/Home';
 import Signup from './ui-component/Signup';
 import Login from './ui-component/Login';
+import Studentdash from './ui-component/Studentdash';
+
 
 function App() {
   return (
@@ -17,10 +19,11 @@ function App() {
       <Home />
         <Routes>
           <Route exact path='/' element={<Main />} />
-          <Route path='Work'
-            element={<Home />,<Work />} />
+          <Route path='Work'element={<Work />} />
+          <Route path='Home' element={<Home />} />
             <Route path='signup' element={<Signup />} />
             <Route path='login' element={<Login />} />
+            <Route path='studentdash' element={<Studentdash />} />
         </Routes>
       </Router>
     </div>

@@ -15,9 +15,10 @@ const Home = () => {
         <ul className="menu-items">
           <li><Link to="/">Home</Link></li>
           <li><Link to="Work">About</Link></li>
-          <li><Link to="">Internship</Link></li>
-          <li><Link to="/">Login</Link></li>
-          <li><Link to="/">Signup</Link></li>
+          <li><Link to="/Studentdash">Internship</Link></li>
+          <li><Link to="/Login">Login</Link></li>
+          <li><Link to="/SignUp">SignUp</Link></li>
+
         </ul>
         <h1 className="logo">Internship Portal</h1>
       </div>

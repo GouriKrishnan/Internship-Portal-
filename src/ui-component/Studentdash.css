@@ -1,0 +1,42 @@
+/* Studentdash.css */
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.studentdash {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-card {
+  flex: 0 0 calc(30% - 20px); /* Adjust the width as needed */
+  margin: 10px;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  margin-bottom: 20px;
+}
+
+.project-image {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Add any additional styling as needed */
+

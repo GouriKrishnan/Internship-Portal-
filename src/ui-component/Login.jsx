@@ -72,18 +72,19 @@ const Signup = () => {
  
        <div class="input">
           <label for="name">Username</label>
-          <input type="text" name="name" id="name"></input>
+          <input type="text"   value={name}
+              onChange={(e) => setName(e.target.value)} name="name" id="name"></input>
           <span class="spin"></span>
        </div>
  
        <div class="input">
           <label for="pass">Password</label>
-          <input type="password" name="pass" id="pass"></input>
+          <input type="password"   name="pass" id="pass"></input>
           <span class="spin"></span>
        </div>
  
        <div class="button login">
-          <button><span>GO</span> <i class="fa fa-check"></i></button>
+          <button onClick={handleSignup}><span>GO</span> <i class="fa fa-check"></i></button>
        </div>
        </div>
  

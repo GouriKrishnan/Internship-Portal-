@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 
+import '../registration.css';
+import '../reg.js';
+import BannerBackground from "../Assets/home-banner-background.png";
+
 const Signup = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -56,6 +60,13 @@ const Signup = () => {
   };
 
   return (
+
+
+    <div class="regdesign">
+    <div className="home-bannerImage-container">
+    <img src={BannerBackground} alt="Banner Background"/>
+    </div>
+
     <div>
       {isRegistered ? (
         <div>
@@ -63,6 +74,13 @@ const Signup = () => {
           {/* Add any additional content for registered users */}
         </div>
       ) : (
+
+        <div class="materialContainer">
+
+
+        <div class="box">
+
+
         <div>
           <h2>Signup</h2>
           <label>
@@ -110,9 +128,14 @@ const Signup = () => {
             />
           </label>
           <br />
-          <button onClick={handleSignup}>Signup</button>
+          <button onClick={handleSignup}>SignUp</button>
         </div>
+      
+    </div>
+    </div>
       )}
+      </div>
+      
     </div>
   );
 };
