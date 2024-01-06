@@ -1,0 +1,92 @@
+/* Webdevelopment.css */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+ /* .webdev{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+.image-wrapper {
+  margin-top: 1rem;
+  display: flex;
+
+}
+
+.image {
+  width: 100vw;
+  height: 50vh;
+  padding-bottom: 3.2rem;
+}
+
+
+.webdev {
+  position: relative;
+}
+
+.content-box {
+  max-width: 800px; /* Set a maximum width for better responsiveness */
+  margin: 0 auto; /* Center the content horizontally */
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f0f0f0; /* Example background color */
+  border: 1px solid hwb(0 7% 93%); /* Example border */
+  border-radius: 8px; /* Example border-radius */
+}
+
+
+.header-image {
+  width: 100%; /* Make the image fill the width of the container */
+  max-height: 200px; /* Set a maximum height for the image */
+  object-fit: cover; /* Ensure the image covers the entire container */
+  border-radius: 8px 8px 0 0; /* Apply border-radius to the top corners */
+}
+
+
+#title {
+  text-align: center;
+}
+
+
+.content-box-a {
+  max-width: 800px; /* Set a maximum width for better responsiveness */
+  margin: 0 auto; /* Center the content horizontally */
+  padding: 20px;
+  box-sizing: border-box;
+  background-color:#f0f0f0; /* Example background color */
+  border: 1px solid  #f0f0f0; /* Example border */
+  border-radius: 8px; /* Example border-radius */
+}
+
+.learning-box-a{
+  padding-left: 0;
+  list-style-position: inside;
+
+}
+             
+.learning-list-a {
+  display: flex;
+  justify-content: space-around; /* Adjust as needed: space-around, space-between, center, etc. */
+  list-style-type: none;
+  padding: 0;
+}
+
+.learning-list-a li {
+  text-align: center; /* Center the text within each list item */
+  width: 150px; /* Adjust the width of each list item as needed */
+  margin: 10px; /* Add margin for spacing between list items */
+  border: 1px solid #0a0a0a; /* Add border for better visibility */
+  border-radius: 8px; /* Add border-radius for rounded corners */
+  padding: 10px; /* Add padding for better visual appeal */
+  background-color: #f1efef;
+}
+
+
+
+
+

@@ -8,17 +8,17 @@ const Work = () => {
     {
       image: PickMeals,
       title: "Learning",
-      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et sagittis duis elementum interdum facilisi bibendum.",
+      text: "ICT Academy of Kerala provides the best quality education to upskill the youths across the state in various sectors. Join our courses and build your future!",
     },
     {
       image: ChooseMeals,
-      title: "Choose How Often",
-      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et ",
+      title: "Six-Month Programs",
+      text: "Elevate your career through the Six-month Certification Programs offered by the ICT Academy of Kerala. ",
     },
     {
       image: DeliveryMeals,
-      title: "Fast Deliveries",
-      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et lorem ipsum",
+      title: "ICTAK",
+      text: "ICT Academy of Kerala is a Social Enterprise created in a Public Private Partnership model (PPP) for improving their employability opportunities in the Industry.",
     },
   ];
   return (
@@ -27,8 +27,7 @@ const Work = () => {
       <div className="work-section-top">
         <h1 className="primary-heading">About</h1>
         <p className="primary-text">
-          Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et
-          elit. Dolor turpis molestie dui magnis facilisis at fringilla quam.
+        ICT Academy of Kerala (ICTAK) is a social enterprise officially launched on the 24th of June, 2014. The organization had a humble beginning providing skill training programs to selected academic institutions. Over the years, ICTAK has grown to a prime service provider of all ICT and innovation-related training and capacity-building programs in the state.
         </p>
       </div>
       <div className="work-section-bottom">

@@ -18,7 +18,7 @@ const Main = () => {
         </div>
         <div className="home-text-section">
           <h1 className="primary-heading">
-            Knowledge is the Acheived Through Praticals
+            Build your Career with ICTAK
           </h1>
           <p className="primary-text">
             Your Knowledge is just  an Click Away.
