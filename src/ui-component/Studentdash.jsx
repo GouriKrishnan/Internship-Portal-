@@ -35,19 +35,19 @@ const Studentdash = () => {
       title: 'Data Science Project',
       description: 'Analyzing a dataset and presenting insights using Python and Jupyter Notebook.',
       imgSrc: DataScienceImage,
-      link: '/data-science',
+      link: '/datascience',
     },
     {
       title: 'Mobile App Development',
       description: 'Build a mobile app for iOS and Android platforms using React Native.',
       imgSrc: MobileAppDevelopmentImage,
-      link: '/mobile-app',
+      link: '/Appdevelopment',
     },
     {
         title: 'E-commerce Website Development',
         description: 'Build a full-fledged e-commerce website with product listings, shopping cart, and payment integration.',
         imgSrc: EcommerceWebsiteDevelopmentImage,
-        link: '/e-commerce',
+        link: '/Ecommerce',
     },
     {
         title: 'Machine Learning Model Implementation',
@@ -84,7 +84,7 @@ const Studentdash = () => {
       console.log('Search for:', searchQuery);
     }
   };
-
+const projectsToDisplay = filteredProjects.length > 0 ? filteredProjects : projectTopics;
 
   return (
     <div className="studentdash">
