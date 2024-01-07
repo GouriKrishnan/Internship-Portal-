@@ -9,7 +9,9 @@ import Signup from './ui-component/Signup';
 import Login from './ui-component/Login';
 import Studentdash from './ui-component/Studentdash';
 import Webdevelopment from './ui-component/Webdevelopment';
- 
+import DataScience from './ui-component/Datascience';
+import Appdevelopment from './ui-component/Appdevelopment';
+import Ecommerce from './ui-component/Ecommerce';
 
 function App() {
   return (
@@ -25,6 +27,9 @@ function App() {
             <Route path='login' element={<Login />} />
             <Route path='studentdash' element={<Studentdash />} />
             <Route path='Webdevelopment' element={<Webdevelopment />} />
+             <Route path='Datascience' element={<DataScience />}/>
+            <Route path='Appdevelopment' element={<Appdevelopment />} />
+            <Route path='Ecommerce' element={<Ecommerce />} />
         </Routes>
       </Router>
     </div>
