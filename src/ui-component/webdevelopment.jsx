@@ -2,21 +2,36 @@
  import WebdevelopmentImage from "../Assets/web-development-image.jpg";
  import './Webdevelopment.css';
 
-const Webdevelopment = () => {
-  
+ import WebDevelopmentImage from '../Assets/web-development-image.jpg'
+ 
+ const Webdevelopment = () => {
+
+  const handleRegisterClick = () => {
+    // Add your logic for the Register button click
+    console.log('Register button clicked');
+  };
    return (
-
-      <div className="webdev">
-        
-        {/* <h3> Certified Web Development Project</h3>
-       <br></br>
-       <h2>Become a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DApps.</h2> */}
-
-         <div className='image-wrapper'>
-           <img src={WebdevelopmentImage} alt='' className='image'/>
-           </div>
+    <div className="webdev">
+       
+        {/* Image with text overlay */}
+        <div className="image-container">
+          <img src={WebDevelopmentImage} alt="Web Development Project" className="project-image-a" />
+          <div className="image-overlay">
+          <div className="image-text">
+          <h2>Certified Web Development Project</h2>
           <br></br>
-         
+          <h1>Become a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DApps.</h1>
+        </div>
+
+        {/* Register Now button */}
+        <div className="register-button-container">
+          <button className="register-button" onClick={handleRegisterClick}>
+            Register Now
+          </button>
+        </div>
+      </div>
+      </div>
+         <br></br>
 
       <div className="content-box">
           <section id='title' className='py-md-5'>
@@ -37,11 +52,7 @@ const Webdevelopment = () => {
             </div>
           </section>
           </div>
-
              <br></br>
-
-             <br></br>
-
 
           <div className="content-box-a">
           <section id='title' className='py-md-5'>
@@ -61,7 +72,8 @@ const Webdevelopment = () => {
           </section>
           </div>
                  
-              
+           <br></br>  
+
        
       </div>
     );
@@ -70,3 +82,6 @@ const Webdevelopment = () => {
 export default Webdevelopment;
 
 
+            
+        
+ 
