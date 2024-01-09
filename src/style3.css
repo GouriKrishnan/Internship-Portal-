@@ -1,6 +1,7 @@
 .box1 {
     position: absolute;
     top: 0;
+    transform: translate(-50%, -50%);
     opacity: 1;
     float: left;
     padding: 40px 50px 40px 50px;
@@ -13,7 +14,7 @@
     z-index: 5;
     /* overflow-y: auto; */
     height: 800px;
-    margin-top: -100px;
+    margin-top: -250px;
   
     &.back {
       transform: scale(0.95);
@@ -441,6 +442,7 @@
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+    height: 100px;
   }
   
   * {
