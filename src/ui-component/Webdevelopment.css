@@ -12,18 +12,38 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 20px; /* Add margin to the bottom of .webdev to create space between the top content and the card */
+  margin-bottom: 0px; /* Add margin to the bottom of .webdev to create space between the top content and the card */
+}
+
+.back-button {
+  text-decoration: none;
+  background-color: #ff8c00; /* Button color */
+  color: #fff; /* Text color */
+  padding: 8px 16px; /* Padding around the text */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  cursor: pointer;
+  position: fixed;
+  transition: background-color 0.3s; /* Smooth transition on hover */
+
+  /* Additional styles for better appearance */
+  border: none;
+  outline: none;
+}
+
+.back-button:hover {
+  background-color: #e1880b; /* Darker color on hover */
 }
 
 
 .image-container {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 60vh;
   padding-bottom: 3.2rem;
   overflow: hidden;
-  max-height: 400px;
-  margin-top: 0; /* Adjust margin as needed */
+  /* max-height: 400px; */
+  margin-top: 40; /* Adjust margin as needed */
 }
 
 .project-image-a {
@@ -86,8 +106,9 @@
   margin: 0 auto; /* Center the content horizontally */
   padding: 50px;
   box-sizing: border-box;
-  background-color: #f0f0f0; /* Example background color */
-  border: 1px solid hwb(0 7% 93%); /* Example border */
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: transparent; /* Example background color */
+  border: 1px solid orange; /* Example border */
   border-radius: 8px; /* Example border-radius */
 }
 
@@ -110,7 +131,7 @@
   margin: 0 auto; /* Center the content horizontally */
   padding: 20px;
   box-sizing: border-box;
-  background-color:#f0f0f0; /* Example background color */
+  background-color:transparent; /* Example background color */
   border: 1px solid  #f0f0f0; /* Example border */
   border-radius: 8px; /* Example border-radius */
 }
@@ -148,7 +169,7 @@
   margin-top: 200px;
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #6f7377; /* Change this to your desired color */
+  background-color: #e1880b; /* Change this to your desired color */
   color: #fff; /* Text color */
   border: none;
   border-radius: 5px;
@@ -157,18 +178,109 @@
 }
 
 .register-button:hover {
-  background-color: #1e94e3; /* Change this to your desired hover color */
+  background-color: #5b96d2; /* Change this to your desired hover color */
+}
+
+.course-content-box {
+  background-color:transparent;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.course-content-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.course-content-list {
+  list-style-type: none;
+  padding: 0;
+  max-height: 200px; /* Set a maximum height for the list to make it scrollable */
+  overflow-y: auto;
+}
+
+.course-content-list li {
+  margin-bottom: 10px;
+}
+
+.course-content-list strong {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.document-upload {
+  margin-top: 20px;
+}
+
+.back-button {
+  text-decoration: none;
+  background-color: transparent; /* Button color */
+  color: #110f0f; /* Text color */
+   /* padding: 8px 16px; Padding around the text */
+  padding: 10px;
+  margin: 0;
+  width: 800px;
+  /* border: 2px solid #000;  */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 20px; /* Font size */
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition on hover */
+
+  /* Additional styles for better appearance */
+  border-color: #0a0a0a;
+  outline-color: #0a0a0a; 
+
+ 
+  /* position: fixed;
+  left: 20px; /* Adjust the left position as needed */
+  
+}
+
+.back-button:hover {
+  background-color: #0056b3; /* Darker color on hover */
 }
 
 
+/* Accordion styles */
+ .accordion .item {
+   border-color: #e1880b; 
+ }
+  /* border-radius: 0; */
+  /* padding: 1.5rem 1rem; */
 
 
-
-
+ .accordion .item .accordion-header button{
+  background-color: transparent;
+  font-size: large;
+  border-color: #e1880b;
+  box-shadow: none; 
  
+ }
+ .accordion .item .accordion-header {
+  text-decoration-color: #e1880b;
+ }
+ .content-docs .h2{
+  font-size: medium;
+  font-weight: 200;
+ }
 
-  
+ .content-box-a {
+  background-color: orange; /* Set the background color to orange */
+  padding: 20px; /* Add padding to provide space inside the box */
+  margin-top: 20px; /* Add margin to create space between boxes */
+  border-radius: 10px; /* Add border-radius for rounded corners */
+  width: 80%; /* Set the desired width (adjust as needed) */
+  margin-left: auto; /* Center the box horizontally */
+  margin-right: auto; /* Center the box horizontally */
 
-
+}
 
 
