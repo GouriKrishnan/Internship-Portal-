@@ -12,7 +12,8 @@ import Webdevelopment from './ui-component/Webdevelopment';
 import DataScience from './ui-component/Datascience';
 import Appdevelopment from './ui-component/Appdevelopment';
 import Ecommerce from './ui-component/Ecommerce';
-
+import Machinelearning from './ui-component/Machinelearning';
+import MobileApp from './ui-component/MobileApp';
 function App() {
   return (
     <div>
@@ -30,6 +31,8 @@ function App() {
              <Route path='Datascience' element={<DataScience />}/>
             <Route path='Appdevelopment' element={<Appdevelopment />} />
             <Route path='Ecommerce' element={<Ecommerce />} />
+            <Route path='Machinelearning' element={<Machinelearning />} />
+            <Route path='MobileApp' element={<MobileApp />} />
         </Routes>
       </Router>
     </div>
