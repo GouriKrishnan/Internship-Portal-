@@ -17,14 +17,14 @@
   .image-container-app {
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: 60vh;
     padding-bottom: 3.2rem;
     overflow: hidden;
-    max-height: 400px;
-    margin-top: 0; /* Adjust margin as needed */
+    /* max-height: 400px; */
+    margin-top: 40; /* Adjust margin as needed */
   }
   
-  .project-image-app-a {
+  .project-image-app {
     width: 100%;
     /* max-width: 400px; */
     height: auto;
@@ -84,8 +84,9 @@
     margin: 0 auto; /* Center the content horizontally */
     padding: 50px;
     box-sizing: border-box;
-    background-color: #f0f0f0; /* Example background color */
-    border: 1px solid hwb(0 7% 93%); /* Example border */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: transparent; /* Example background color */
+    border: 1px solid orange; /* Example border */
     border-radius: 8px; /* Example border-radius */
   }
   
@@ -146,7 +147,7 @@
     margin-top: 200px;
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #6f7377; /* Change this to your desired color */
+    background-color: #e1880b; /* Change this to your desired color */
     color: #fff; /* Text color */
     border: none;
     border-radius: 5px;
@@ -154,10 +155,68 @@
     transition: background-color 0.3s ease;
   }
   
-  .register-button:hover {
-    background-color: #1e94e3; /* Change this to your desired hover color */
+  .register-button-app:hover {
+    background-color: #2e9ee9; /* Change this to your desired hover color */
   }
   
   
+  .back-button {
+    text-decoration: none;
+    background-color: #ece7e2; /* Button color */
+    color: #110f0f; /* Text color */
+     /* padding: 8px 16px; Padding around the text */
+    padding: 10px;
+    margin: 0;
+    width: 100px;
+    /* border: 2px solid #000;  */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 20px; /* Font size */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition on hover */
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    position: fixed;
+    left: 20px; /* Adjust the left position as needed */
+    top: 100px; /* Adjust the top position as needed */
+  }
+  
+  .back-button:hover {
+    background-color: #e1880b; /* Darker color on hover */
+  }
+
+  .accordion .item {
+    border-color: #e1880b; 
+  }
+
+  .accordion .item .accordion-header button{
+    background-color: transparent;
+    font-size: large;
+    border-color: #e1880b;
+    box-shadow: none; 
+   
+   }
+   .accordion .item .accordion-header {
+    text-decoration-color: #e1880b;
+   }
+
+  .content-docs .h2{
+    font-size: medium;
+    font-weight: 200;
+   }
+  
+   .content-box-a {
+    background-color: orange; /* Set the background color to orange */
+    padding: 20px; /* Add padding to provide space inside the box */
+    margin-top: 20px; /* Add margin to create space between boxes */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    width: 80%; /* Set the desired width (adjust as needed) */
+    margin-left: auto; /* Center the box horizontally */
+    margin-right: auto; /* Center the box horizontally */
+  
+  }
   
   
