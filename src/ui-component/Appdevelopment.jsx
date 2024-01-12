@@ -1,16 +1,21 @@
 import React from 'react';
- import './Appdevelopment.css';
+import { Link } from 'react-router-dom';
+import './Appdevelopment.css';
+import AppDevelopmentImage from '../Assets/orange theme.jpg'
+import Accordion from 'react-bootstrap/Accordion';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import ListGroup from 'react-bootstrap/ListGroup'; 
 
- import AppDevelopmentImage from '../Assets/mobile_app_development.jpg'
- 
- const Appdevelopment = () => {
+const Appdevelopment = () => {
 
   const handleRegisterClick = () => {
-    // Add your logic for the Register button click
+    // Add Register button click
     console.log('Register button clicked');
   };
    return (
     <div className="appdev">
+
+<Link to="/Studentdash" className="back-button">Back</Link> {/*Add this line for the back button */}
        
         {/* Image with text overlay */}
         <div className="image-container-app">
@@ -53,24 +58,82 @@ import React from 'react';
           </div>
              <br></br>
 
-          <div className="content-box-app-a">
+             <div className="content-box-a">
           <section id='title' className='py-md-5'>
-            {/* <div className="title-box"> */}
-              <h2 className='my-5 text-center'>This course includes:</h2>
-            {/* </div> */}
-            <div className='learning-box-app-a'>
-              <ul className='learning-list-app-a'>
-                <li> Project Overview Document</li>
-                <li> Reference Materials</li>
-                <li> Weekly Submissions</li>
-                <li> Viva voce </li>
-                <li> Discussion Forum</li>
-                <li> Certificate of Completion</li>
-              </ul>
+            <div>
+              <h2>This Course Includes</h2>
             </div>
+      <ListGroup>
+      <ListGroup.Item>On-demand video</ListGroup.Item>
+      <ListGroup.Item>Coding exercises</ListGroup.Item>
+      <ListGroup.Item>Articles</ListGroup.Item>
+      <ListGroup.Item>Downloadable resources</ListGroup.Item>
+      <ListGroup.Item>Access on mobile and TV</ListGroup.Item>
+      <ListGroup.Item>Certificate of completion</ListGroup.Item>
+      </ListGroup>
           </section>
-          </div>          
-           <br></br>  
+          </div>
+            <br></br>  
+
+          <div className='content-docs'>
+            <section id='title' className='py-md-5'>
+          <div>
+            <h2>Course Content</h2>
+            </div>
+       <Accordion defaultActiveKey={0} className="mt-5 p-3">
+           <Accordion.Item eventKey="0" className="item" >
+              <Accordion.Header>Introduction to Mobile App Development</Accordion.Header>
+                 <Accordion.Body>
+                 Welcome to the First Real World App Development course with .NET MAUI. In this comprehensive course, you will learn everything you need to know about building beautiful Android and iOS apps using .NET MAUI.
+
+                 Our course covers all the fundamentals of .NET MAUI, including Layouts & Controls, Hierarchical Navigation, Model pages, List View, Collection View, Shell and much more.
+                 </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="1" className="item" >
+              <Accordion.Header>Project Overview Document</Accordion.Header>
+                 <Accordion.Body>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                 </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="2" className="item" >
+              <Accordion.Header>Reference Materials</Accordion.Header>
+                 <Accordion.Body>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                 </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="3" className="item" >
+              <Accordion.Header>Weekly Submission and Submission Link</Accordion.Header>
+                 <Accordion.Body>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                 </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="4" className="item" >
+              <Accordion.Header>Final Project Report Submission</Accordion.Header>
+                 <Accordion.Body>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                 </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="5" className="item" >
+              <Accordion.Header>Viva Voce Format</Accordion.Header>
+                 <Accordion.Body>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                 </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="6" className="item" >
+              <Accordion.Header>Discussion Forum</Accordion.Header>
+                 <Accordion.Body>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                 </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="7" className="item" >
+              <Accordion.Header>Score System</Accordion.Header>
+                 <Accordion.Body>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                 </Accordion.Body>
+            </Accordion.Item>
+        </Accordion>
+        </section>
+        </div>
       </div>
     );
   };
