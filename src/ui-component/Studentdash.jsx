@@ -29,13 +29,13 @@ const Studentdash = () => {
       title: 'Web Development Project',
       description: 'Create a responsive website using HTML, CSS, and JavaScript.',
       imgSrc: WebDevelopmentImage,
-      link: '/webdevelopment',
+      link: '/Webdevelopment',
     },
     {
       title: 'Data Science Project',
       description: 'Analyzing a dataset and presenting insights using Python and Jupyter Notebook.',
       imgSrc: DataScienceImage,
-      link: '/datascience',
+      link: '/Datascience',
     },
     {
       title: 'Mobile App Development',
@@ -53,13 +53,13 @@ const Studentdash = () => {
         title: 'Machine Learning Model Implementation',
         description: 'Implement a machine learning model using a popular framework (e.g., TensorFlow or PyTorch) for a specific use case.',
         imgSrc: MachineLearningImage,
-        link: '/machine-learning',
+        link: '/Machinelearning',
     },
     {
         title: 'Mobile App Security Assessment',
         description: 'Conduct a security assessment on a mobile app, identify vulnerabilities, and propose security enhancements.',
         imgSrc: MobileAppSecurityImage,
-        link: '/mobile-app',
+        link: '/MobileApp',
       },
 
 
