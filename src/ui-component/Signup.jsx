@@ -10,52 +10,27 @@ const Signup = () => {
   const [exitExamMarks, setExitExamMarks] = useState('');
   const [isRegistered, setIsRegistered] = useState(false);
 
-  const handleSignup = () => {
-    // Check if all fields are filled
-    if (!name || !email || !password || !phone || !exitExamMarks) {
-      alert('Please fill in all the fields.');
-      return;
+  const handleSignup = async () => {
+    // ... (existing validation checks)
+  
+  {
+      const response = await fetch('http://localhost3000/signup', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          password,
+          phone,
+          exitExamMarks,
+        }),
+      });
     }
-
-    // Email validation regex
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-    // Password complexity regex
-    const passwordRegex = /^(?=.\d)(?=.[a-z])(?=.[A-Z])(?=.[\W_]).{8,}$/;
-
-    // Phone number validation regex (10 digits)
-    const phoneRegex = /^\d{10}$/;
-
-    // Validate email
-    if (!emailRegex.test(email)) {
-      alert('Please enter a valid email address.');
-      return;
-    }
-
-    // Validate password
-    if (!passwordRegex.test(password)) {
-      alert(
-        'Password must contain at least one digit, one uppercase letter, one lowercase letter, one special symbol, and be at least 8 characters long.'
-      );
-      return;
-    }
-
-    // Validate phone number
-    if (!phoneRegex.test(phone)) {
-      alert('Please enter a valid 10-digit phone number.');
-      return;
-    }
-
-    // Validate exit exam marks
-    const passMarks = 40;
-    if (parseInt(exitExamMarks, 10) < passMarks) {
-      alert('You must secure pass marks in the exit exam to register.');
-      return;
-    }
-
-    // Registration successful
-    setIsRegistered(true);
+     
   };
+  
 
   return (
     <div class="regdesign">
